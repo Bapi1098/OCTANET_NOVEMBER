@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+
+}
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color:#fff;
+    --main-color: #0ef;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+
+}
+nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color:  var(--main-color);
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color:  var(--text-color);
+    text-shadow: 0 0 1rem var(--main-color);
+
+}
+.details{
+    margin-left: 8%;
+    margin-top: 10% ;
+}
+.details h1{
+    font-size: 50px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+span{
+    color: orange;
+}
+.details p{
+    color: var(--text-color);
+    line-height: 22px;
+}
+.details a{
+    background: var(--second-bg-color);
+    padding: .8rem .8rem;
+    text-decoration: none;
+    box-shadow: none;
+    font-weight: 600;
+    color: var(--text-color);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 4rem;
+    transition: .5s ease;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+}
+.details a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.logo {
+    width: 15vh;
+    height: 12vh;
+}
+
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.images .boy {
+    bottom: 60px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+    bottom: 80px;
+}
+
+.images:hover .boy {
+    bottom: 10px;
+}
